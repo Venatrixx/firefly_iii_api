@@ -36,14 +36,14 @@ RecurrenceUpdate _$RecurrenceUpdateFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$RecurrenceUpdateToJson(RecurrenceUpdate instance) =>
     <String, dynamic>{
-      'title': instance.title,
-      'description': instance.description,
-      'first_date': instance.firstDate?.toIso8601String(),
-      'repeat_until': instance.repeatUntil?.toIso8601String(),
-      'nr_of_repetitions': instance.nrOfRepetitions,
-      'apply_rules': instance.applyRules,
-      'active': instance.active,
-      'notes': instance.notes,
-      'repetitions': instance.repetitions,
-      'transactions': instance.transactions,
+      'title': ?instance.title,
+      'description': ?instance.description,
+      'first_date': ?instance.firstDate?.toIso8601String(),
+      'repeat_until': ?instance.repeatUntil?.toIso8601String(),
+      'nr_of_repetitions': ?instance.nrOfRepetitions,
+      'apply_rules': ?instance.applyRules,
+      'active': ?instance.active,
+      'notes': ?instance.notes,
+      'repetitions': ?instance.repetitions,
+      'transactions': ?instance.transactions,
     };

@@ -14,6 +14,6 @@ BadRequestResponse _$BadRequestResponseFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$BadRequestResponseToJson(BadRequestResponse instance) =>
     <String, dynamic>{
-      'message': instance.message,
-      'exception': instance.exception,
+      'message': ?instance.message,
+      'exception': ?instance.exception,
     };

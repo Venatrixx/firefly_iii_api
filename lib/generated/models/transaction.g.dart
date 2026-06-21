@@ -22,9 +22,9 @@ Transaction _$TransactionFromJson(Map<String, dynamic> json) => Transaction(
 
 Map<String, dynamic> _$TransactionToJson(Transaction instance) =>
     <String, dynamic>{
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
-      'user': instance.user,
-      'group_title': instance.groupTitle,
+      'created_at': ?instance.createdAt?.toIso8601String(),
+      'updated_at': ?instance.updatedAt?.toIso8601String(),
+      'user': ?instance.user,
+      'group_title': ?instance.groupTitle,
       'transactions': instance.transactions,
     };

@@ -18,6 +18,6 @@ Map<String, dynamic> _$AutocompleteRuleToJson(AutocompleteRule instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
-      'description': instance.description,
-      'active': instance.active,
+      'description': ?instance.description,
+      'active': ?instance.active,
     };

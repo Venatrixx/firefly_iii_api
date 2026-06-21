@@ -18,8 +18,8 @@ PiggyBankAccountRead _$PiggyBankAccountReadFromJson(
 Map<String, dynamic> _$PiggyBankAccountReadToJson(
   PiggyBankAccountRead instance,
 ) => <String, dynamic>{
-  'account_id': instance.accountId,
-  'name': instance.name,
-  'current_amount': instance.currentAmount,
-  'pc_current_amount': instance.pcCurrentAmount,
+  'account_id': ?instance.accountId,
+  'name': ?instance.name,
+  'current_amount': ?instance.currentAmount,
+  'pc_current_amount': ?instance.pcCurrentAmount,
 };

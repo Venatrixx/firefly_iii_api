@@ -20,6 +20,6 @@ Map<String, dynamic> _$CurrencyExchangeRateUpdateToJson(
 ) => <String, dynamic>{
   'date': instance.date.toIso8601String(),
   'rate': instance.rate,
-  'from': instance.from,
-  'to': instance.to,
+  'from': ?instance.from,
+  'to': ?instance.to,
 };

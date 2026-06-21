@@ -27,15 +27,15 @@ Map<String, dynamic> _$BudgetStoreToJson(
   BudgetStore instance,
 ) => <String, dynamic>{
   'name': instance.name,
-  'active': instance.active,
-  'order': instance.order,
-  'notes': instance.notes,
+  'active': ?instance.active,
+  'order': ?instance.order,
+  'notes': ?instance.notes,
   'fire_webhooks': instance.fireWebhooks,
-  'auto_budget_type': _$AutoBudgetTypeEnumMap[instance.autoBudgetType],
-  'auto_budget_currency_id': instance.autoBudgetCurrencyId,
-  'auto_budget_currency_code': instance.autoBudgetCurrencyCode,
-  'auto_budget_amount': instance.autoBudgetAmount,
-  'auto_budget_period': _$AutoBudgetPeriodEnumMap[instance.autoBudgetPeriod],
+  'auto_budget_type': ?_$AutoBudgetTypeEnumMap[instance.autoBudgetType],
+  'auto_budget_currency_id': ?instance.autoBudgetCurrencyId,
+  'auto_budget_currency_code': ?instance.autoBudgetCurrencyCode,
+  'auto_budget_amount': ?instance.autoBudgetAmount,
+  'auto_budget_period': ?_$AutoBudgetPeriodEnumMap[instance.autoBudgetPeriod],
 };
 
 const _$AutoBudgetTypeEnumMap = {

@@ -17,5 +17,5 @@ Map<String, dynamic> _$AutocompleteBudgetToJson(AutocompleteBudget instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
-      'active': instance.active,
+      'active': ?instance.active,
     };

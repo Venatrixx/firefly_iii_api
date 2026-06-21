@@ -24,13 +24,13 @@ RuleTrigger _$RuleTriggerFromJson(Map<String, dynamic> json) => RuleTrigger(
 
 Map<String, dynamic> _$RuleTriggerToJson(RuleTrigger instance) =>
     <String, dynamic>{
-      'id': instance.id,
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
+      'id': ?instance.id,
+      'created_at': ?instance.createdAt?.toIso8601String(),
+      'updated_at': ?instance.updatedAt?.toIso8601String(),
       'type': _$RuleTriggerKeywordEnumMap[instance.type]!,
       'value': instance.value,
       'prohibited': instance.prohibited,
-      'order': instance.order,
+      'order': ?instance.order,
       'active': instance.active,
       'stop_processing': instance.stopProcessing,
     };

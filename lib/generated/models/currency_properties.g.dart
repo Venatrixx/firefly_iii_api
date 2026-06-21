@@ -24,12 +24,12 @@ CurrencyProperties _$CurrencyPropertiesFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$CurrencyPropertiesToJson(CurrencyProperties instance) =>
     <String, dynamic>{
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
+      'created_at': ?instance.createdAt?.toIso8601String(),
+      'updated_at': ?instance.updatedAt?.toIso8601String(),
       'enabled': instance.enabled,
-      'primary': instance.primary,
+      'primary': ?instance.primary,
       'code': instance.code,
       'name': instance.name,
       'symbol': instance.symbol,
-      'decimal_places': instance.decimalPlaces,
+      'decimal_places': ?instance.decimalPlaces,
     };

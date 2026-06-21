@@ -19,9 +19,9 @@ CurrencyStore _$CurrencyStoreFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$CurrencyStoreToJson(CurrencyStore instance) =>
     <String, dynamic>{
       'enabled': instance.enabled,
-      'primary': instance.primary,
+      'primary': ?instance.primary,
       'code': instance.code,
       'name': instance.name,
       'symbol': instance.symbol,
-      'decimal_places': instance.decimalPlaces,
+      'decimal_places': ?instance.decimalPlaces,
     };

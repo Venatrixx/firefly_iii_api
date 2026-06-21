@@ -25,11 +25,11 @@ Map<String, dynamic> _$AutocompletePiggyBalanceToJson(
 ) => <String, dynamic>{
   'id': instance.id,
   'name': instance.name,
-  'name_with_balance': instance.nameWithBalance,
-  'currency_id': instance.currencyId,
-  'currency_code': instance.currencyCode,
-  'currency_symbol': instance.currencySymbol,
-  'currency_decimal_places': instance.currencyDecimalPlaces,
-  'object_group_id': instance.objectGroupId,
-  'object_group_title': instance.objectGroupTitle,
+  'name_with_balance': ?instance.nameWithBalance,
+  'currency_id': ?instance.currencyId,
+  'currency_code': ?instance.currencyCode,
+  'currency_symbol': ?instance.currencySymbol,
+  'currency_decimal_places': ?instance.currencyDecimalPlaces,
+  'object_group_id': ?instance.objectGroupId,
+  'object_group_title': ?instance.objectGroupTitle,
 };

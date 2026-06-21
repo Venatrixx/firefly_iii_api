@@ -23,11 +23,11 @@ WebhookMessage _$WebhookMessageFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$WebhookMessageToJson(WebhookMessage instance) =>
     <String, dynamic>{
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
-      'sent': instance.sent,
-      'errored': instance.errored,
-      'webhook_id': instance.webhookId,
-      'uuid': instance.uuid,
-      'message': instance.message,
+      'created_at': ?instance.createdAt?.toIso8601String(),
+      'updated_at': ?instance.updatedAt?.toIso8601String(),
+      'sent': ?instance.sent,
+      'errored': ?instance.errored,
+      'webhook_id': ?instance.webhookId,
+      'uuid': ?instance.uuid,
+      'message': ?instance.message,
     };

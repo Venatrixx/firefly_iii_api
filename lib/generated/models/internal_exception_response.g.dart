@@ -16,6 +16,6 @@ InternalExceptionResponse _$InternalExceptionResponseFromJson(
 Map<String, dynamic> _$InternalExceptionResponseToJson(
   InternalExceptionResponse instance,
 ) => <String, dynamic>{
-  'message': instance.message,
-  'exception': instance.exception,
+  'message': ?instance.message,
+  'exception': ?instance.exception,
 };

@@ -17,7 +17,7 @@ PiggyBankAccountStore _$PiggyBankAccountStoreFromJson(
 Map<String, dynamic> _$PiggyBankAccountStoreToJson(
   PiggyBankAccountStore instance,
 ) => <String, dynamic>{
-  'id': instance.id,
-  'name': instance.name,
-  'current_amount': instance.currentAmount,
+  'id': ?instance.id,
+  'name': ?instance.name,
+  'current_amount': ?instance.currentAmount,
 };

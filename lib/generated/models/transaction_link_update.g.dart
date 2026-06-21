@@ -19,9 +19,9 @@ TransactionLinkUpdate _$TransactionLinkUpdateFromJson(
 Map<String, dynamic> _$TransactionLinkUpdateToJson(
   TransactionLinkUpdate instance,
 ) => <String, dynamic>{
-  'link_type_id': instance.linkTypeId,
-  'link_type_name': instance.linkTypeName,
-  'inward_id': instance.inwardId,
-  'outward_id': instance.outwardId,
-  'notes': instance.notes,
+  'link_type_id': ?instance.linkTypeId,
+  'link_type_name': ?instance.linkTypeName,
+  'inward_id': ?instance.inwardId,
+  'outward_id': ?instance.outwardId,
+  'notes': ?instance.notes,
 };

@@ -20,12 +20,12 @@ CurrencyUpdate _$CurrencyUpdateFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$CurrencyUpdateToJson(CurrencyUpdate instance) =>
     <String, dynamic>{
-      'enabled': instance.enabled,
-      'primary': _$CurrencyUpdatePrimaryEnumMap[instance.primary],
-      'code': instance.code,
-      'name': instance.name,
-      'symbol': instance.symbol,
-      'decimal_places': instance.decimalPlaces,
+      'enabled': ?instance.enabled,
+      'primary': ?_$CurrencyUpdatePrimaryEnumMap[instance.primary],
+      'code': ?instance.code,
+      'name': ?instance.name,
+      'symbol': ?instance.symbol,
+      'decimal_places': ?instance.decimalPlaces,
     };
 
 const _$CurrencyUpdatePrimaryEnumMap = {

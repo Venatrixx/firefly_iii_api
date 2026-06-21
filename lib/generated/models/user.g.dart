@@ -24,12 +24,12 @@ User _$UserFromJson(Map<String, dynamic> json) => User(
 );
 
 Map<String, dynamic> _$UserToJson(User instance) => <String, dynamic>{
-  'created_at': instance.createdAt?.toIso8601String(),
-  'updated_at': instance.updatedAt?.toIso8601String(),
+  'created_at': ?instance.createdAt?.toIso8601String(),
+  'updated_at': ?instance.updatedAt?.toIso8601String(),
   'email': instance.email,
-  'blocked': instance.blocked,
-  'blocked_code': _$UserBlockedCodePropertyEnumMap[instance.blockedCode],
-  'role': _$UserRolePropertyEnumMap[instance.role],
+  'blocked': ?instance.blocked,
+  'blocked_code': ?_$UserBlockedCodePropertyEnumMap[instance.blockedCode],
+  'role': ?_$UserRolePropertyEnumMap[instance.role],
 };
 
 const _$UserBlockedCodePropertyEnumMap = {

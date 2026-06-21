@@ -19,7 +19,7 @@ Map<String, dynamic> _$AutocompleteTransactionIdToJson(
   AutocompleteTransactionId instance,
 ) => <String, dynamic>{
   'id': instance.id,
-  'transaction_group_id': instance.transactionGroupId,
+  'transaction_group_id': ?instance.transactionGroupId,
   'name': instance.name,
   'description': instance.description,
 };

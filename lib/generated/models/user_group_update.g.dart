@@ -16,6 +16,6 @@ UserGroupUpdate _$UserGroupUpdateFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$UserGroupUpdateToJson(UserGroupUpdate instance) =>
     <String, dynamic>{
       'title': instance.title,
-      'primary_currency_id': instance.primaryCurrencyId,
-      'primary_currency_code': instance.primaryCurrencyCode,
+      'primary_currency_id': ?instance.primaryCurrencyId,
+      'primary_currency_code': ?instance.primaryCurrencyCode,
     };

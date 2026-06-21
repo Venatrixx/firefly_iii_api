@@ -14,6 +14,6 @@ NotFoundResponse _$NotFoundResponseFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$NotFoundResponseToJson(NotFoundResponse instance) =>
     <String, dynamic>{
-      'message': instance.message,
-      'exception': instance.exception,
+      'message': ?instance.message,
+      'exception': ?instance.exception,
     };

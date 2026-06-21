@@ -15,9 +15,9 @@ PageLink _$PageLinkFromJson(Map<String, dynamic> json) => PageLink(
 );
 
 Map<String, dynamic> _$PageLinkToJson(PageLink instance) => <String, dynamic>{
-  'self': instance.self,
-  'first': instance.first,
-  'next': instance.next,
-  'prev': instance.prev,
-  'last': instance.last,
+  'self': ?instance.self,
+  'first': ?instance.first,
+  'next': ?instance.next,
+  'prev': ?instance.prev,
+  'last': ?instance.last,
 };

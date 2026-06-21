@@ -30,14 +30,14 @@ PiggyBankStore _$PiggyBankStoreFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$PiggyBankStoreToJson(PiggyBankStore instance) =>
     <String, dynamic>{
       'name': instance.name,
-      'accounts': instance.accounts,
-      'target_amount': instance.targetAmount,
-      'current_amount': instance.currentAmount,
+      'accounts': ?instance.accounts,
+      'target_amount': ?instance.targetAmount,
+      'current_amount': ?instance.currentAmount,
       'start_date': instance.startDate.toIso8601String(),
-      'target_date': instance.targetDate?.toIso8601String(),
-      'order': instance.order,
-      'active': instance.active,
-      'notes': instance.notes,
-      'object_group_id': instance.objectGroupId,
-      'object_group_title': instance.objectGroupTitle,
+      'target_date': ?instance.targetDate?.toIso8601String(),
+      'order': ?instance.order,
+      'active': ?instance.active,
+      'notes': ?instance.notes,
+      'object_group_id': ?instance.objectGroupId,
+      'object_group_title': ?instance.objectGroupTitle,
     };

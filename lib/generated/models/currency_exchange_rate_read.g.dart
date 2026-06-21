@@ -24,8 +24,8 @@ CurrencyExchangeRateRead _$CurrencyExchangeRateReadFromJson(
 Map<String, dynamic> _$CurrencyExchangeRateReadToJson(
   CurrencyExchangeRateRead instance,
 ) => <String, dynamic>{
-  'type': instance.type,
-  'id': instance.id,
-  'attributes': instance.attributes,
-  'links': instance.links,
+  'type': ?instance.type,
+  'id': ?instance.id,
+  'attributes': ?instance.attributes,
+  'links': ?instance.links,
 };

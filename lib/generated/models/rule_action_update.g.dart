@@ -19,11 +19,11 @@ RuleActionUpdate _$RuleActionUpdateFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$RuleActionUpdateToJson(RuleActionUpdate instance) =>
     <String, dynamic>{
-      'type': _$RuleActionKeywordEnumMap[instance.type],
-      'value': instance.value,
-      'order': instance.order,
-      'active': instance.active,
-      'stop_processing': instance.stopProcessing,
+      'type': ?_$RuleActionKeywordEnumMap[instance.type],
+      'value': ?instance.value,
+      'order': ?instance.order,
+      'active': ?instance.active,
+      'stop_processing': ?instance.stopProcessing,
     };
 
 const _$RuleActionKeywordEnumMap = {

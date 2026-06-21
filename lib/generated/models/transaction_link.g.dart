@@ -23,11 +23,11 @@ TransactionLink _$TransactionLinkFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$TransactionLinkToJson(TransactionLink instance) =>
     <String, dynamic>{
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
+      'created_at': ?instance.createdAt?.toIso8601String(),
+      'updated_at': ?instance.updatedAt?.toIso8601String(),
       'link_type_id': instance.linkTypeId,
-      'link_type_name': instance.linkTypeName,
+      'link_type_name': ?instance.linkTypeName,
       'inward_id': instance.inwardId,
       'outward_id': instance.outwardId,
-      'notes': instance.notes,
+      'notes': ?instance.notes,
     };

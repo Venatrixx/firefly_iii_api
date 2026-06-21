@@ -21,9 +21,9 @@ TagModelStore _$TagModelStoreFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$TagModelStoreToJson(TagModelStore instance) =>
     <String, dynamic>{
       'tag': instance.tag,
-      'date': instance.date?.toIso8601String(),
-      'description': instance.description,
-      'latitude': instance.latitude,
-      'longitude': instance.longitude,
-      'zoom_level': instance.zoomLevel,
+      'date': ?instance.date?.toIso8601String(),
+      'description': ?instance.description,
+      'latitude': ?instance.latitude,
+      'longitude': ?instance.longitude,
+      'zoom_level': ?instance.zoomLevel,
     };

@@ -29,15 +29,17 @@ RecurrenceRepetition _$RecurrenceRepetitionFromJson(
 Map<String, dynamic> _$RecurrenceRepetitionToJson(
   RecurrenceRepetition instance,
 ) => <String, dynamic>{
-  'id': instance.id,
-  'created_at': instance.createdAt?.toIso8601String(),
-  'updated_at': instance.updatedAt?.toIso8601String(),
+  'id': ?instance.id,
+  'created_at': ?instance.createdAt?.toIso8601String(),
+  'updated_at': ?instance.updatedAt?.toIso8601String(),
   'type': _$RecurrenceRepetitionTypeEnumMap[instance.type]!,
   'moment': instance.moment,
-  'skip': instance.skip,
-  'weekend': instance.weekend,
-  'description': instance.description,
-  'occurrences': instance.occurrences?.map((e) => e.toIso8601String()).toList(),
+  'skip': ?instance.skip,
+  'weekend': ?instance.weekend,
+  'description': ?instance.description,
+  'occurrences': ?instance.occurrences
+      ?.map((e) => e.toIso8601String())
+      .toList(),
 };
 
 const _$RecurrenceRepetitionTypeEnumMap = {

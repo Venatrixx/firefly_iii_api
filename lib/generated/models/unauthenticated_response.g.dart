@@ -16,6 +16,6 @@ UnauthenticatedResponse _$UnauthenticatedResponseFromJson(
 Map<String, dynamic> _$UnauthenticatedResponseToJson(
   UnauthenticatedResponse instance,
 ) => <String, dynamic>{
-  'message': instance.message,
-  'exception': instance.exception,
+  'message': ?instance.message,
+  'exception': ?instance.exception,
 };

@@ -27,16 +27,16 @@ RuleUpdate _$RuleUpdateFromJson(Map<String, dynamic> json) => RuleUpdate(
 
 Map<String, dynamic> _$RuleUpdateToJson(RuleUpdate instance) =>
     <String, dynamic>{
-      'title': instance.title,
-      'description': instance.description,
-      'rule_group_id': instance.ruleGroupId,
-      'order': instance.order,
-      'trigger': _$RuleTriggerTypeEnumMap[instance.trigger],
+      'title': ?instance.title,
+      'description': ?instance.description,
+      'rule_group_id': ?instance.ruleGroupId,
+      'order': ?instance.order,
+      'trigger': ?_$RuleTriggerTypeEnumMap[instance.trigger],
       'active': instance.active,
-      'strict': instance.strict,
+      'strict': ?instance.strict,
       'stop_processing': instance.stopProcessing,
-      'triggers': instance.triggers,
-      'actions': instance.actions,
+      'triggers': ?instance.triggers,
+      'actions': ?instance.actions,
     };
 
 const _$RuleTriggerTypeEnumMap = {

@@ -20,10 +20,10 @@ UserGroupReadMembers _$UserGroupReadMembersFromJson(
 Map<String, dynamic> _$UserGroupReadMembersToJson(
   UserGroupReadMembers instance,
 ) => <String, dynamic>{
-  'user_id': instance.userId,
-  'user_email': instance.userEmail,
-  'you': instance.you,
-  'roles': instance.roles?.map((e) => _$UserGroupReadRoleEnumMap[e]!).toList(),
+  'user_id': ?instance.userId,
+  'user_email': ?instance.userEmail,
+  'you': ?instance.you,
+  'roles': ?instance.roles?.map((e) => _$UserGroupReadRoleEnumMap[e]!).toList(),
 };
 
 const _$UserGroupReadRoleEnumMap = {

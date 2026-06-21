@@ -16,9 +16,9 @@ Pagination _$PaginationFromJson(Map<String, dynamic> json) => Pagination(
 
 Map<String, dynamic> _$PaginationToJson(Pagination instance) =>
     <String, dynamic>{
-      'total': instance.total,
-      'count': instance.count,
-      'per_page': instance.perPage,
-      'current_page': instance.currentPage,
-      'total_pages': instance.totalPages,
+      'total': ?instance.total,
+      'count': ?instance.count,
+      'per_page': ?instance.perPage,
+      'current_page': ?instance.currentPage,
+      'total_pages': ?instance.totalPages,
     };

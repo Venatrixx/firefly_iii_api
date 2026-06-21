@@ -23,15 +23,15 @@ BasicSummaryEntry _$BasicSummaryEntryFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$BasicSummaryEntryToJson(BasicSummaryEntry instance) =>
     <String, dynamic>{
-      'key': instance.key,
-      'title': instance.title,
-      'monetary_value': instance.monetaryValue,
-      'currency_id': instance.currencyId,
-      'currency_code': instance.currencyCode,
-      'currency_symbol': instance.currencySymbol,
-      'currency_decimal_places': instance.currencyDecimalPlaces,
-      'no_available_budgets': instance.noAvailableBudgets,
-      'value_parsed': instance.valueParsed,
-      'local_icon': instance.localIcon,
-      'sub_title': instance.subTitle,
+      'key': ?instance.key,
+      'title': ?instance.title,
+      'monetary_value': ?instance.monetaryValue,
+      'currency_id': ?instance.currencyId,
+      'currency_code': ?instance.currencyCode,
+      'currency_symbol': ?instance.currencySymbol,
+      'currency_decimal_places': ?instance.currencyDecimalPlaces,
+      'no_available_budgets': ?instance.noAvailableBudgets,
+      'value_parsed': ?instance.valueParsed,
+      'local_icon': ?instance.localIcon,
+      'sub_title': ?instance.subTitle,
     };

@@ -15,7 +15,7 @@ LinkTypeUpdate _$LinkTypeUpdateFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$LinkTypeUpdateToJson(LinkTypeUpdate instance) =>
     <String, dynamic>{
-      'name': instance.name,
-      'inward': instance.inward,
-      'outward': instance.outward,
+      'name': ?instance.name,
+      'inward': ?instance.inward,
+      'outward': ?instance.outward,
     };

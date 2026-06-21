@@ -17,7 +17,7 @@ RuleGroupStore _$RuleGroupStoreFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$RuleGroupStoreToJson(RuleGroupStore instance) =>
     <String, dynamic>{
       'title': instance.title,
-      'description': instance.description,
-      'order': instance.order,
-      'active': instance.active,
+      'description': ?instance.description,
+      'order': ?instance.order,
+      'active': ?instance.active,
     };

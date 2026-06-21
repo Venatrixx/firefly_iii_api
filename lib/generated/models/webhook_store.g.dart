@@ -23,15 +23,15 @@ WebhookStore _$WebhookStoreFromJson(Map<String, dynamic> json) => WebhookStore(
 
 Map<String, dynamic> _$WebhookStoreToJson(WebhookStore instance) =>
     <String, dynamic>{
-      'active': instance.active,
+      'active': ?instance.active,
       'title': instance.title,
-      'triggers': instance.triggers
+      'triggers': ?instance.triggers
           ?.map((e) => _$WebhookTriggerEnumMap[e]!)
           .toList(),
-      'responses': instance.responses
+      'responses': ?instance.responses
           ?.map((e) => _$WebhookResponseEnumMap[e]!)
           .toList(),
-      'deliveries': instance.deliveries
+      'deliveries': ?instance.deliveries
           ?.map((e) => _$WebhookDeliveryEnumMap[e]!)
           .toList(),
       'url': instance.url,

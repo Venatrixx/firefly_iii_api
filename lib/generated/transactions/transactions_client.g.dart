@@ -236,7 +236,7 @@ class _TransactionsClient implements TransactionsClient {
             method: 'POST',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/json',
+            contentType: 'application/x-www-form-urlencoded',
           )
           .compose(
             _dio.options,
@@ -307,7 +307,7 @@ class _TransactionsClient implements TransactionsClient {
             method: 'PUT',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/json',
+            contentType: 'application/x-www-form-urlencoded',
           )
           .compose(
             _dio.options,

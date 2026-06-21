@@ -23,11 +23,11 @@ Map<String, dynamic> _$AutocompletePiggyToJson(AutocompletePiggy instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
-      'currency_id': instance.currencyId,
-      'currency_code': instance.currencyCode,
-      'currency_symbol': instance.currencySymbol,
-      'currency_name': instance.currencyName,
-      'currency_decimal_places': instance.currencyDecimalPlaces,
-      'object_group_id': instance.objectGroupId,
-      'object_group_title': instance.objectGroupTitle,
+      'currency_id': ?instance.currencyId,
+      'currency_code': ?instance.currencyCode,
+      'currency_symbol': ?instance.currencySymbol,
+      'currency_name': ?instance.currencyName,
+      'currency_decimal_places': ?instance.currencyDecimalPlaces,
+      'object_group_id': ?instance.objectGroupId,
+      'object_group_title': ?instance.objectGroupTitle,
     };

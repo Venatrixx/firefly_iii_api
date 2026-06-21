@@ -19,9 +19,9 @@ ArrayEntryWithCurrencyAndSum _$ArrayEntryWithCurrencyAndSumFromJson(
 Map<String, dynamic> _$ArrayEntryWithCurrencyAndSumToJson(
   ArrayEntryWithCurrencyAndSum instance,
 ) => <String, dynamic>{
-  'currency_id': instance.currencyId,
-  'currency_code': instance.currencyCode,
-  'currency_symbol': instance.currencySymbol,
-  'currency_decimal_places': instance.currencyDecimalPlaces,
-  'sum': instance.sum,
+  'currency_id': ?instance.currencyId,
+  'currency_code': ?instance.currencyCode,
+  'currency_symbol': ?instance.currencySymbol,
+  'currency_decimal_places': ?instance.currencyDecimalPlaces,
+  'sum': ?instance.sum,
 };

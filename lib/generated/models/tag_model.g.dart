@@ -22,12 +22,12 @@ TagModel _$TagModelFromJson(Map<String, dynamic> json) => TagModel(
 );
 
 Map<String, dynamic> _$TagModelToJson(TagModel instance) => <String, dynamic>{
-  'created_at': instance.createdAt?.toIso8601String(),
-  'updated_at': instance.updatedAt?.toIso8601String(),
+  'created_at': ?instance.createdAt?.toIso8601String(),
+  'updated_at': ?instance.updatedAt?.toIso8601String(),
   'tag': instance.tag,
-  'date': instance.date?.toIso8601String(),
-  'description': instance.description,
-  'latitude': instance.latitude,
-  'longitude': instance.longitude,
-  'zoom_level': instance.zoomLevel,
+  'date': ?instance.date?.toIso8601String(),
+  'description': ?instance.description,
+  'latitude': ?instance.latitude,
+  'longitude': ?instance.longitude,
+  'zoom_level': ?instance.zoomLevel,
 };

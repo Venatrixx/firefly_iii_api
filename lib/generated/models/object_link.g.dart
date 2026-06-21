@@ -14,4 +14,4 @@ ObjectLink _$ObjectLinkFromJson(Map<String, dynamic> json) => ObjectLink(
 );
 
 Map<String, dynamic> _$ObjectLinkToJson(ObjectLink instance) =>
-    <String, dynamic>{'self': instance.self, '0': instance.object74};
+    <String, dynamic>{'self': ?instance.self, '0': ?instance.object74};

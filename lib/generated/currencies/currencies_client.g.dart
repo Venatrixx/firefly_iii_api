@@ -330,7 +330,7 @@ class _CurrenciesClient implements CurrenciesClient {
             method: 'POST',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/json',
+            contentType: 'application/x-www-form-urlencoded',
           )
           .compose(
             _dio.options,
@@ -497,7 +497,7 @@ class _CurrenciesClient implements CurrenciesClient {
             method: 'PUT',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/json',
+            contentType: 'application/x-www-form-urlencoded',
           )
           .compose(
             _dio.options,

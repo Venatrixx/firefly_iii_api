@@ -20,8 +20,8 @@ Map<String, dynamic> _$TransactionLinkStoreToJson(
   TransactionLinkStore instance,
 ) => <String, dynamic>{
   'link_type_id': instance.linkTypeId,
-  'link_type_name': instance.linkTypeName,
+  'link_type_name': ?instance.linkTypeName,
   'inward_id': instance.inwardId,
   'outward_id': instance.outwardId,
-  'notes': instance.notes,
+  'notes': ?instance.notes,
 };

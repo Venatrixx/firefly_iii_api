@@ -19,8 +19,8 @@ ObjectGroup _$ObjectGroupFromJson(Map<String, dynamic> json) => ObjectGroup(
 
 Map<String, dynamic> _$ObjectGroupToJson(ObjectGroup instance) =>
     <String, dynamic>{
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
+      'created_at': ?instance.createdAt?.toIso8601String(),
+      'updated_at': ?instance.updatedAt?.toIso8601String(),
       'title': instance.title,
       'order': instance.order,
     };

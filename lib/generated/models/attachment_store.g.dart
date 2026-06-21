@@ -22,8 +22,8 @@ Map<String, dynamic> _$AttachmentStoreToJson(AttachmentStore instance) =>
       'filename': instance.filename,
       'attachable_type': _$AttachableTypeEnumMap[instance.attachableType]!,
       'attachable_id': instance.attachableId,
-      'title': instance.title,
-      'notes': instance.notes,
+      'title': ?instance.title,
+      'notes': ?instance.notes,
     };
 
 const _$AttachableTypeEnumMap = {

@@ -31,20 +31,20 @@ BillUpdate _$BillUpdateFromJson(Map<String, dynamic> json) => BillUpdate(
 
 Map<String, dynamic> _$BillUpdateToJson(BillUpdate instance) =>
     <String, dynamic>{
-      'currency_id': instance.currencyId,
-      'currency_code': instance.currencyCode,
+      'currency_id': ?instance.currencyId,
+      'currency_code': ?instance.currencyCode,
       'name': instance.name,
-      'amount_min': instance.amountMin,
-      'amount_max': instance.amountMax,
-      'date': instance.date?.toIso8601String(),
-      'end_date': instance.endDate?.toIso8601String(),
-      'extension_date': instance.extensionDate?.toIso8601String(),
-      'repeat_freq': _$BillRepeatFrequencyEnumMap[instance.repeatFreq],
-      'skip': instance.skip,
-      'active': instance.active,
-      'notes': instance.notes,
-      'object_group_id': instance.objectGroupId,
-      'object_group_title': instance.objectGroupTitle,
+      'amount_min': ?instance.amountMin,
+      'amount_max': ?instance.amountMax,
+      'date': ?instance.date?.toIso8601String(),
+      'end_date': ?instance.endDate?.toIso8601String(),
+      'extension_date': ?instance.extensionDate?.toIso8601String(),
+      'repeat_freq': ?_$BillRepeatFrequencyEnumMap[instance.repeatFreq],
+      'skip': ?instance.skip,
+      'active': ?instance.active,
+      'notes': ?instance.notes,
+      'object_group_id': ?instance.objectGroupId,
+      'object_group_title': ?instance.objectGroupTitle,
     };
 
 const _$BillRepeatFrequencyEnumMap = {

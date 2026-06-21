@@ -17,5 +17,5 @@ Map<String, dynamic> _$LinkTypeToJson(LinkType instance) => <String, dynamic>{
   'name': instance.name,
   'inward': instance.inward,
   'outward': instance.outward,
-  'editable': instance.editable,
+  'editable': ?instance.editable,
 };

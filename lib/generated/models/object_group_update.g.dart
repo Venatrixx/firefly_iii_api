@@ -13,4 +13,4 @@ ObjectGroupUpdate _$ObjectGroupUpdateFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$ObjectGroupUpdateToJson(ObjectGroupUpdate instance) =>
-    <String, dynamic>{'title': instance.title, 'order': instance.order};
+    <String, dynamic>{'title': instance.title, 'order': ?instance.order};

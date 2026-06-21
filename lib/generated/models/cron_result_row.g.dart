@@ -16,8 +16,8 @@ CronResultRow _$CronResultRowFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$CronResultRowToJson(CronResultRow instance) =>
     <String, dynamic>{
-      'job_fired': instance.jobFired,
-      'job_succeeded': instance.jobSucceeded,
-      'job_errored': instance.jobErrored,
-      'message': instance.message,
+      'job_fired': ?instance.jobFired,
+      'job_succeeded': ?instance.jobSucceeded,
+      'job_errored': ?instance.jobErrored,
+      'message': ?instance.message,
     };

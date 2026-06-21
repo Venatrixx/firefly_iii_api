@@ -15,9 +15,9 @@ Data _$DataFromJson(Map<String, dynamic> json) => Data(
 );
 
 Map<String, dynamic> _$DataToJson(Data instance) => <String, dynamic>{
-  'version': instance.version,
-  'api_version': instance.apiVersion,
-  'php_version': instance.phpVersion,
-  'os': instance.os,
-  'driver': instance.driver,
+  'version': ?instance.version,
+  'api_version': ?instance.apiVersion,
+  'php_version': ?instance.phpVersion,
+  'os': ?instance.os,
+  'driver': ?instance.driver,
 };

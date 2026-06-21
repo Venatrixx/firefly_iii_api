@@ -31,16 +31,16 @@ Rule _$RuleFromJson(Map<String, dynamic> json) => Rule(
 );
 
 Map<String, dynamic> _$RuleToJson(Rule instance) => <String, dynamic>{
-  'created_at': instance.createdAt?.toIso8601String(),
-  'updated_at': instance.updatedAt?.toIso8601String(),
+  'created_at': ?instance.createdAt?.toIso8601String(),
+  'updated_at': ?instance.updatedAt?.toIso8601String(),
   'title': instance.title,
-  'description': instance.description,
+  'description': ?instance.description,
   'rule_group_id': instance.ruleGroupId,
-  'rule_group_title': instance.ruleGroupTitle,
-  'order': instance.order,
+  'rule_group_title': ?instance.ruleGroupTitle,
+  'order': ?instance.order,
   'trigger': _$RuleTriggerTypeEnumMap[instance.trigger]!,
   'active': instance.active,
-  'strict': instance.strict,
+  'strict': ?instance.strict,
   'stop_processing': instance.stopProcessing,
   'triggers': instance.triggers,
   'actions': instance.actions,

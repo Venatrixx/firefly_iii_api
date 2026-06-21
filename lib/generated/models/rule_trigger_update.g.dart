@@ -19,11 +19,11 @@ RuleTriggerUpdate _$RuleTriggerUpdateFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$RuleTriggerUpdateToJson(RuleTriggerUpdate instance) =>
     <String, dynamic>{
-      'type': _$RuleTriggerKeywordEnumMap[instance.type],
-      'value': instance.value,
-      'order': instance.order,
-      'active': instance.active,
-      'stop_processing': instance.stopProcessing,
+      'type': ?_$RuleTriggerKeywordEnumMap[instance.type],
+      'value': ?instance.value,
+      'order': ?instance.order,
+      'active': ?instance.active,
+      'stop_processing': ?instance.stopProcessing,
     };
 
 const _$RuleTriggerKeywordEnumMap = {

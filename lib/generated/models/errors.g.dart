@@ -26,16 +26,16 @@ Errors _$ErrorsFromJson(Map<String, dynamic> json) => Errors(
 );
 
 Map<String, dynamic> _$ErrorsToJson(Errors instance) => <String, dynamic>{
-  'email': instance.email,
-  'force': instance.force,
-  'blocked': instance.blocked,
-  'field': instance.field,
-  'role': instance.role,
-  'blocked_code': instance.blockedCode,
-  'name': instance.name,
-  'type': instance.type,
-  'iban': instance.iban,
-  'start': instance.start,
-  'end': instance.end,
-  'date': instance.date,
+  'email': ?instance.email,
+  'force': ?instance.force,
+  'blocked': ?instance.blocked,
+  'field': ?instance.field,
+  'role': ?instance.role,
+  'blocked_code': ?instance.blockedCode,
+  'name': ?instance.name,
+  'type': ?instance.type,
+  'iban': ?instance.iban,
+  'start': ?instance.start,
+  'end': ?instance.end,
+  'date': ?instance.date,
 };

@@ -20,10 +20,10 @@ TagModelUpdate _$TagModelUpdateFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$TagModelUpdateToJson(TagModelUpdate instance) =>
     <String, dynamic>{
-      'tag': instance.tag,
-      'date': instance.date?.toIso8601String(),
-      'description': instance.description,
-      'latitude': instance.latitude,
-      'longitude': instance.longitude,
-      'zoom_level': instance.zoomLevel,
+      'tag': ?instance.tag,
+      'date': ?instance.date?.toIso8601String(),
+      'description': ?instance.description,
+      'latitude': ?instance.latitude,
+      'longitude': ?instance.longitude,
+      'zoom_level': ?instance.zoomLevel,
     };

@@ -18,8 +18,8 @@ RuleActionStore _$RuleActionStoreFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$RuleActionStoreToJson(RuleActionStore instance) =>
     <String, dynamic>{
       'type': _$RuleActionKeywordEnumMap[instance.type]!,
-      'value': instance.value,
-      'order': instance.order,
+      'value': ?instance.value,
+      'order': ?instance.order,
       'active': instance.active,
       'stop_processing': instance.stopProcessing,
     };

@@ -20,10 +20,10 @@ RuleGroup _$RuleGroupFromJson(Map<String, dynamic> json) => RuleGroup(
 );
 
 Map<String, dynamic> _$RuleGroupToJson(RuleGroup instance) => <String, dynamic>{
-  'created_at': instance.createdAt?.toIso8601String(),
-  'updated_at': instance.updatedAt?.toIso8601String(),
+  'created_at': ?instance.createdAt?.toIso8601String(),
+  'updated_at': ?instance.updatedAt?.toIso8601String(),
   'title': instance.title,
-  'description': instance.description,
-  'order': instance.order,
-  'active': instance.active,
+  'description': ?instance.description,
+  'order': ?instance.order,
+  'active': ?instance.active,
 };

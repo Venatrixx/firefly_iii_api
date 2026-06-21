@@ -25,19 +25,19 @@ WebhookUpdate _$WebhookUpdateFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$WebhookUpdateToJson(WebhookUpdate instance) =>
     <String, dynamic>{
-      'active': instance.active,
-      'title': instance.title,
-      'secret': instance.secret,
-      'triggers': instance.triggers
+      'active': ?instance.active,
+      'title': ?instance.title,
+      'secret': ?instance.secret,
+      'triggers': ?instance.triggers
           ?.map((e) => _$WebhookTriggerEnumMap[e]!)
           .toList(),
-      'responses': instance.responses
+      'responses': ?instance.responses
           ?.map((e) => _$WebhookResponseEnumMap[e]!)
           .toList(),
-      'deliveries': instance.deliveries
+      'deliveries': ?instance.deliveries
           ?.map((e) => _$WebhookDeliveryEnumMap[e]!)
           .toList(),
-      'url': instance.url,
+      'url': ?instance.url,
     };
 
 const _$WebhookTriggerEnumMap = {

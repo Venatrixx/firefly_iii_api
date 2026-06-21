@@ -13,4 +13,4 @@ CategoryUpdate _$CategoryUpdateFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$CategoryUpdateToJson(CategoryUpdate instance) =>
-    <String, dynamic>{'name': instance.name, 'notes': instance.notes};
+    <String, dynamic>{'name': instance.name, 'notes': ?instance.notes};

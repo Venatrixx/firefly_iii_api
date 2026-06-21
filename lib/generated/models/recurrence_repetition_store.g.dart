@@ -20,8 +20,8 @@ Map<String, dynamic> _$RecurrenceRepetitionStoreToJson(
 ) => <String, dynamic>{
   'type': _$RecurrenceRepetitionTypeEnumMap[instance.type]!,
   'moment': instance.moment,
-  'skip': instance.skip,
-  'weekend': instance.weekend,
+  'skip': ?instance.skip,
+  'weekend': ?instance.weekend,
 };
 
 const _$RecurrenceRepetitionTypeEnumMap = {

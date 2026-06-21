@@ -21,5 +21,5 @@ Map<String, dynamic> _$CurrencyExchangeRateStoreToJson(
   'date': instance.date.toIso8601String(),
   'from': instance.from,
   'to': instance.to,
-  'rate': instance.rate,
+  'rate': ?instance.rate,
 };

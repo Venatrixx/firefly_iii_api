@@ -10,6 +10,6 @@ Object74 _$Object74FromJson(Map<String, dynamic> json) =>
     Object74(rel: json['rel'] as String?, uri: json['uri'] as String?);
 
 Map<String, dynamic> _$Object74ToJson(Object74 instance) => <String, dynamic>{
-  'rel': instance.rel,
-  'uri': instance.uri,
+  'rel': ?instance.rel,
+  'uri': ?instance.uri,
 };

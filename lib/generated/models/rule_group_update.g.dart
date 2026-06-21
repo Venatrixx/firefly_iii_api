@@ -16,8 +16,8 @@ RuleGroupUpdate _$RuleGroupUpdateFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$RuleGroupUpdateToJson(RuleGroupUpdate instance) =>
     <String, dynamic>{
-      'title': instance.title,
-      'description': instance.description,
-      'order': instance.order,
-      'active': instance.active,
+      'title': ?instance.title,
+      'description': ?instance.description,
+      'order': ?instance.order,
+      'active': ?instance.active,
     };

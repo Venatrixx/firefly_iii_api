@@ -23,12 +23,12 @@ RuleAction _$RuleActionFromJson(Map<String, dynamic> json) => RuleAction(
 
 Map<String, dynamic> _$RuleActionToJson(RuleAction instance) =>
     <String, dynamic>{
-      'id': instance.id,
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
+      'id': ?instance.id,
+      'created_at': ?instance.createdAt?.toIso8601String(),
+      'updated_at': ?instance.updatedAt?.toIso8601String(),
       'type': _$RuleActionKeywordEnumMap[instance.type]!,
-      'value': instance.value,
-      'order': instance.order,
+      'value': ?instance.value,
+      'order': ?instance.order,
       'active': instance.active,
       'stop_processing': instance.stopProcessing,
     };

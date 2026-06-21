@@ -19,8 +19,8 @@ Preference _$PreferenceFromJson(Map<String, dynamic> json) => Preference(
 
 Map<String, dynamic> _$PreferenceToJson(Preference instance) =>
     <String, dynamic>{
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
+      'created_at': ?instance.createdAt?.toIso8601String(),
+      'updated_at': ?instance.updatedAt?.toIso8601String(),
       'name': instance.name,
       'data': instance.data,
     };

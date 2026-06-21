@@ -22,7 +22,7 @@ CronResult _$CronResultFromJson(Map<String, dynamic> json) => CronResult(
 
 Map<String, dynamic> _$CronResultToJson(CronResult instance) =>
     <String, dynamic>{
-      'recurring_transactions': instance.recurringTransactions,
-      'auto_budgets': instance.autoBudgets,
-      'telemetry': instance.telemetry,
+      'recurring_transactions': ?instance.recurringTransactions,
+      'auto_budgets': ?instance.autoBudgets,
+      'telemetry': ?instance.telemetry,
     };

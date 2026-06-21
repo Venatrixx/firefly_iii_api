@@ -20,7 +20,7 @@ Map<String, dynamic> _$RuleTriggerStoreToJson(RuleTriggerStore instance) =>
     <String, dynamic>{
       'type': _$RuleTriggerKeywordEnumMap[instance.type]!,
       'value': instance.value,
-      'order': instance.order,
+      'order': ?instance.order,
       'active': instance.active,
       'prohibited': instance.prohibited,
       'stop_processing': instance.stopProcessing,

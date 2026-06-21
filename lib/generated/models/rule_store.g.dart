@@ -26,14 +26,14 @@ RuleStore _$RuleStoreFromJson(Map<String, dynamic> json) => RuleStore(
 
 Map<String, dynamic> _$RuleStoreToJson(RuleStore instance) => <String, dynamic>{
   'title': instance.title,
-  'description': instance.description,
+  'description': ?instance.description,
   'rule_group_id': instance.ruleGroupId,
-  'rule_group_title': instance.ruleGroupTitle,
-  'order': instance.order,
+  'rule_group_title': ?instance.ruleGroupTitle,
+  'order': ?instance.order,
   'trigger': _$RuleTriggerTypeEnumMap[instance.trigger]!,
   'active': instance.active,
   'strict': instance.strict,
-  'stop_processing': instance.stopProcessing,
+  'stop_processing': ?instance.stopProcessing,
   'triggers': instance.triggers,
   'actions': instance.actions,
 };

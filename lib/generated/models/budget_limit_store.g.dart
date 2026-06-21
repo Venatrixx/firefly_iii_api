@@ -21,13 +21,13 @@ BudgetLimitStore _$BudgetLimitStoreFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$BudgetLimitStoreToJson(BudgetLimitStore instance) =>
     <String, dynamic>{
-      'currency_id': instance.currencyId,
-      'currency_code': instance.currencyCode,
+      'currency_id': ?instance.currencyId,
+      'currency_code': ?instance.currencyCode,
       'budget_id': instance.budgetId,
       'start': instance.start.toIso8601String(),
-      'period': instance.period,
+      'period': ?instance.period,
       'end': instance.end.toIso8601String(),
       'amount': instance.amount,
-      'notes': instance.notes,
+      'notes': ?instance.notes,
       'fire_webhooks': instance.fireWebhooks,
     };

@@ -19,9 +19,9 @@ TransactionStore _$TransactionStoreFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$TransactionStoreToJson(TransactionStore instance) =>
     <String, dynamic>{
-      'error_if_duplicate_hash': instance.errorIfDuplicateHash,
-      'apply_rules': instance.applyRules,
+      'error_if_duplicate_hash': ?instance.errorIfDuplicateHash,
+      'apply_rules': ?instance.applyRules,
       'fire_webhooks': instance.fireWebhooks,
-      'group_title': instance.groupTitle,
+      'group_title': ?instance.groupTitle,
       'transactions': instance.transactions,
     };

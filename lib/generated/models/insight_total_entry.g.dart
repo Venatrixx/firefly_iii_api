@@ -16,8 +16,8 @@ InsightTotalEntry _$InsightTotalEntryFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$InsightTotalEntryToJson(InsightTotalEntry instance) =>
     <String, dynamic>{
-      'difference': instance.difference,
-      'difference_float': instance.differenceFloat,
-      'currency_id': instance.currencyId,
-      'currency_code': instance.currencyCode,
+      'difference': ?instance.difference,
+      'difference_float': ?instance.differenceFloat,
+      'currency_id': ?instance.currencyId,
+      'currency_code': ?instance.currencyCode,
     };

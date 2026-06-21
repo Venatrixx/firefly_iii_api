@@ -15,7 +15,7 @@ AttachmentUpdate _$AttachmentUpdateFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$AttachmentUpdateToJson(AttachmentUpdate instance) =>
     <String, dynamic>{
-      'filename': instance.filename,
-      'title': instance.title,
-      'notes': instance.notes,
+      'filename': ?instance.filename,
+      'title': ?instance.title,
+      'notes': ?instance.notes,
     };

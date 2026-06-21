@@ -18,10 +18,10 @@ InsightGroupEntry _$InsightGroupEntryFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$InsightGroupEntryToJson(InsightGroupEntry instance) =>
     <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'difference': instance.difference,
-      'difference_float': instance.differenceFloat,
-      'currency_id': instance.currencyId,
-      'currency_code': instance.currencyCode,
+      'id': ?instance.id,
+      'name': ?instance.name,
+      'difference': ?instance.difference,
+      'difference_float': ?instance.differenceFloat,
+      'currency_id': ?instance.currencyId,
+      'currency_code': ?instance.currencyCode,
     };

@@ -17,7 +17,7 @@ PiggyBankAccountUpdate _$PiggyBankAccountUpdateFromJson(
 Map<String, dynamic> _$PiggyBankAccountUpdateToJson(
   PiggyBankAccountUpdate instance,
 ) => <String, dynamic>{
-  'account_id': instance.accountId,
-  'name': instance.name,
-  'current_amount': instance.currentAmount,
+  'account_id': ?instance.accountId,
+  'name': ?instance.name,
+  'current_amount': ?instance.currentAmount,
 };

@@ -13,4 +13,4 @@ SystemInfo _$SystemInfoFromJson(Map<String, dynamic> json) => SystemInfo(
 );
 
 Map<String, dynamic> _$SystemInfoToJson(SystemInfo instance) =>
-    <String, dynamic>{'data': instance.data};
+    <String, dynamic>{'data': ?instance.data};

@@ -20,10 +20,10 @@ RecurrenceRepetitionUpdate _$RecurrenceRepetitionUpdateFromJson(
 Map<String, dynamic> _$RecurrenceRepetitionUpdateToJson(
   RecurrenceRepetitionUpdate instance,
 ) => <String, dynamic>{
-  'type': _$RecurrenceRepetitionTypeEnumMap[instance.type],
-  'moment': instance.moment,
-  'skip': instance.skip,
-  'weekend': instance.weekend,
+  'type': ?_$RecurrenceRepetitionTypeEnumMap[instance.type],
+  'moment': ?instance.moment,
+  'skip': ?instance.skip,
+  'weekend': ?instance.weekend,
 };
 
 const _$RecurrenceRepetitionTypeEnumMap = {

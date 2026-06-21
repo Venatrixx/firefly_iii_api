@@ -13,5 +13,5 @@ Meta _$MetaFromJson(Map<String, dynamic> json) => Meta(
 );
 
 Map<String, dynamic> _$MetaToJson(Meta instance) => <String, dynamic>{
-  'pagination': instance.pagination,
+  'pagination': ?instance.pagination,
 };

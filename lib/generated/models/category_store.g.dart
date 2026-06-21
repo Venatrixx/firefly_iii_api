@@ -13,4 +13,4 @@ CategoryStore _$CategoryStoreFromJson(Map<String, dynamic> json) =>
     );
 
 Map<String, dynamic> _$CategoryStoreToJson(CategoryStore instance) =>
-    <String, dynamic>{'name': instance.name, 'notes': instance.notes};
+    <String, dynamic>{'name': instance.name, 'notes': ?instance.notes};

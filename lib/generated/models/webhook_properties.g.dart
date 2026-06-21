@@ -31,18 +31,18 @@ WebhookProperties _$WebhookPropertiesFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$WebhookPropertiesToJson(WebhookProperties instance) =>
     <String, dynamic>{
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
-      'active': instance.active,
+      'created_at': ?instance.createdAt?.toIso8601String(),
+      'updated_at': ?instance.updatedAt?.toIso8601String(),
+      'active': ?instance.active,
       'title': instance.title,
-      'secret': instance.secret,
-      'triggers': instance.triggers
+      'secret': ?instance.secret,
+      'triggers': ?instance.triggers
           ?.map((e) => _$WebhookTriggerEnumMap[e]!)
           .toList(),
-      'responses': instance.responses
+      'responses': ?instance.responses
           ?.map((e) => _$WebhookResponseEnumMap[e]!)
           .toList(),
-      'deliveries': instance.deliveries
+      'deliveries': ?instance.deliveries
           ?.map((e) => _$WebhookDeliveryEnumMap[e]!)
           .toList(),
       'url': instance.url,
