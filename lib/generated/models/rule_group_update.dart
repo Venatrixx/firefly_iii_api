@@ -1,0 +1,26 @@
+// coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, unused_import, invalid_annotation_target, unnecessary_import
+
+import 'package:json_annotation/json_annotation.dart';
+
+part 'rule_group_update.g.dart';
+
+@JsonSerializable()
+class RuleGroupUpdate {
+  const RuleGroupUpdate({
+    this.title,
+    this.description,
+    this.order,
+    this.active,
+  });
+  
+  factory RuleGroupUpdate.fromJson(Map<String, Object?> json) => _$RuleGroupUpdateFromJson(json);
+  
+  final String? title;
+  final String? description;
+  final int? order;
+  final bool? active;
+
+  Map<String, Object?> toJson() => _$RuleGroupUpdateToJson(this);
+}

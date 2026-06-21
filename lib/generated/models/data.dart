@@ -1,0 +1,32 @@
+// coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, unused_import, invalid_annotation_target, unnecessary_import
+
+import 'package:json_annotation/json_annotation.dart';
+
+part 'data.g.dart';
+
+@JsonSerializable()
+class Data {
+  const Data({
+    this.version,
+    this.apiVersion,
+    this.phpVersion,
+    this.os,
+    this.driver,
+  });
+  
+  factory Data.fromJson(Map<String, Object?> json) => _$DataFromJson(json);
+  
+  final String? version;
+
+  /// Same value as the version field.
+  @JsonKey(name: 'api_version')
+  final String? apiVersion;
+  @JsonKey(name: 'php_version')
+  final String? phpVersion;
+  final String? os;
+  final String? driver;
+
+  Map<String, Object?> toJson() => _$DataToJson(this);
+}

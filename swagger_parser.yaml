@@ -1,0 +1,6 @@
+swagger_parser:
+  schema_path: lib/docs/firefly-iii-6.5.5-v1.yaml
+  output_directory: lib/generated
+  json_serializer: json_serializable
+  default_content_type: application/json
+  root_client_name: FireflyClient
