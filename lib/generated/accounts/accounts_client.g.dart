@@ -191,7 +191,7 @@ class _AccountsClient implements AccountsClient {
             method: 'POST',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,
@@ -269,7 +269,7 @@ class _AccountsClient implements AccountsClient {
             method: 'PUT',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,

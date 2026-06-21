@@ -137,7 +137,7 @@ class _PiggyBanksClient implements PiggyBanksClient {
             method: 'POST',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,
@@ -208,7 +208,7 @@ class _PiggyBanksClient implements PiggyBanksClient {
             method: 'PUT',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,

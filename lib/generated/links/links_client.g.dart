@@ -112,7 +112,7 @@ class _LinksClient implements LinksClient {
             method: 'POST',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,
@@ -183,7 +183,7 @@ class _LinksClient implements LinksClient {
             method: 'PUT',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,
@@ -275,7 +275,7 @@ class _LinksClient implements LinksClient {
             method: 'POST',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,
@@ -370,7 +370,7 @@ class _LinksClient implements LinksClient {
             method: 'PUT',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,

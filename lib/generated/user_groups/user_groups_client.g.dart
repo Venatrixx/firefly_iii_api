@@ -102,7 +102,7 @@ class _UserGroupsClient implements UserGroupsClient {
             method: 'PUT',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,

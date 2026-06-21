@@ -12,13 +12,14 @@ part 'transaction_update.g.dart';
 class TransactionUpdate {
   const TransactionUpdate({
     this.fireWebhooks = true,
-    this.applyRules,
+    this.applyRules = true,
     this.groupTitle,
     this.transactions,
   });
-  
-  factory TransactionUpdate.fromJson(Map<String, Object?> json) => _$TransactionUpdateFromJson(json);
-  
+
+  factory TransactionUpdate.fromJson(Map<String, Object?> json) =>
+      _$TransactionUpdateFromJson(json);
+
   /// Whether or not to apply rules when submitting transaction.
   @JsonKey(name: 'apply_rules')
   final bool? applyRules;

@@ -100,7 +100,7 @@ class _ConfigurationClient implements ConfigurationClient {
             method: 'PUT',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,

@@ -170,7 +170,7 @@ class _ObjectGroupsClient implements ObjectGroupsClient {
             method: 'PUT',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,

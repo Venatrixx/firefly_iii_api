@@ -142,7 +142,7 @@ class _TagsClient implements TagsClient {
             method: 'POST',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,
@@ -215,7 +215,7 @@ class _TagsClient implements TagsClient {
             method: 'PUT',
             headers: _headers,
             extra: _extra,
-            contentType: 'application/x-www-form-urlencoded',
+            contentType: 'application/json',
           )
           .compose(
             _dio.options,
