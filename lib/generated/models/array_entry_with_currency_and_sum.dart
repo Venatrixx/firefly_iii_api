@@ -15,11 +15,12 @@ class ArrayEntryWithCurrencyAndSum {
     this.currencyDecimalPlaces,
     this.sum,
   });
-  
-  factory ArrayEntryWithCurrencyAndSum.fromJson(Map<String, Object?> json) => _$ArrayEntryWithCurrencyAndSumFromJson(json);
-  
+
+  factory ArrayEntryWithCurrencyAndSum.fromJson(Map<String, Object?> json) =>
+      _$ArrayEntryWithCurrencyAndSumFromJson(json);
+
   @JsonKey(name: 'currency_id')
-  final String? currencyId;
+  final int? currencyId;
   @JsonKey(name: 'currency_code')
   final String? currencyCode;
   @JsonKey(name: 'currency_symbol')

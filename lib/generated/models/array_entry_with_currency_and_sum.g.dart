@@ -9,7 +9,7 @@ part of 'array_entry_with_currency_and_sum.dart';
 ArrayEntryWithCurrencyAndSum _$ArrayEntryWithCurrencyAndSumFromJson(
   Map<String, dynamic> json,
 ) => ArrayEntryWithCurrencyAndSum(
-  currencyId: json['currency_id'] as String?,
+  currencyId: (json['currency_id'] as num?)?.toInt(),
   currencyCode: json['currency_code'] as String?,
   currencySymbol: json['currency_symbol'] as String?,
   currencyDecimalPlaces: (json['currency_decimal_places'] as num?)?.toInt(),
